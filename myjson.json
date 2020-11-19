@@ -1,0 +1,13 @@
+{
+    "firstName":"John",
+    "middleName":null,
+    "lastName":"Smith",
+    "age":30,
+    "isEmployed":true,
+    "dateHired": "2017-09-01",
+    "children":{"name":"Mary", "age":4},
+    "hobbies":["Cycling", "Running", "Bowling"],
+    "pets":[{"type":"dog", "name":"Fido"},
+            {"type":"cat", "name":"Scratch"},
+            {"type":"lizard", "name":"Butch"}]
+}

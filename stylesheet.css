@@ -1,0 +1,108 @@
+/*
+    selector{
+        property: value;
+    }
+*/
+
+h1 {
+  color: red;
+}
+
+/* Class selector */
+.blueCenter {
+  color: blue;
+  text-align: center;
+}
+
+/* ID selector */
+#newHeading {
+  color: turquoise;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+/*p {
+  /*font-family: verdana;
+  /*font-style: italic; /* normal, oblique */
+/*font-variant: small-caps; /* normal */
+/*font-weight: bold; /* normal, bolder, lighter, 100, 900 */
+/*font-size: 20px; /* xx-small, medium, xx-large, smaller, larger, % */
+/*font: italic small-caps bold 15px georgia;
+  /*letter-spacing: 5px; /* normal */
+/*word-spacing: 5px; /* normal */
+/*text-indent: 1cm; /* % or number */
+/*text-align: right; /* left, right, center, justify */
+/*text-decoration: overline; /* underline, line-through, overline */
+/*text-transform: capitalize; /* capitalize, uppercase, lowercase */
+/*text-shadow: 4px 4px 8px blue; /* left-right offset, up-down offset, transparency, color */
+/*background-color: yellow;
+}
+*/
+
+p {
+  border: 5px dotted black; /* width, type, color */ /* type: solid, dashed, dotted, double, groove, ridge, inset, outset */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+img {
+  width: 300px; /* width height */
+  border: 5px dashed red; /* width, type, color */ /* type: solid, dashed, dotted, double, groove, ridge, inset, outset */
+  /* How to center an image */
+  display: block; /* block, none, inline, inline-block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  color: red; /* Changes the font color */
+  background-color: gray;
+  background-image: url(Images/circuit-board.jpg);
+  background-repeat: repeat; /* repeat, repeat-x, repeat-y, no-repeat */
+  background-attachment: fixed; /* fixed scroll */
+  background-size: contain; /* auto, contain, cover */
+}
+
+.floating {
+  float: left; /* left, right, none, inherit */
+  clear: left; /* left, right, none, inherit, both */
+}
+
+a:link {
+  color: black;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+
+hr {
+  border: 20px solid green; /* width, type, color */ /* type: solid, dashed, dotted, double, groove, ridge, inset, outset */
+  border-radius: 10px;
+  width: 75%;
+}
+
+ul {
+  list-style-type: square; /* disc, square, circle */
+  list-style-position: inside; /* inside, outside */
+  list-style-image: url(Images/circuit-board.jpg);
+}
+
+li {
+  font-size: 20px;
+}
+
+ol {
+  list-style-type: decimal; /* decimal, decimal-leading-zero, lower-alpha, upper-alpha, lower-roman, upper-roman, lower-greek, upper-greek, lower-latin, upper-latin, Hebrew, Armenian, Georgian, cjk-ideographic */
+}
