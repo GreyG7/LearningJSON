@@ -1,0 +1,106 @@
+<table class="table table-striped table-inverse table-responsive">
+  <thead class="thead-inverse">
+    <tr>
+      <th>C#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Inheritance - Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse the code functionality and speeds up implementation time.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div><span style="font-size: 10pt; color: green">// FYI: Members, Constructors, Getters and Setters, and custom methods are all optional</span></div>
+        <div><span style="font-size: 10pt; color: blue">class</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: #2b91af">Student</span></div>
+        <div><span style="font-size: 10pt; color: black">{</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">string</span><span style="font-size: 10pt; color: black"> name;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">int</span><span style="font-size: 10pt; color: black"> age;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">bool</span><span style="font-size: 10pt; color: black"> isEnrolled;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: #2b91af">Student</span
+          ><span style="font-size: 10pt; color: black">(</span><span style="font-size: 10pt; color: blue">string</span><span style="font-size: 10pt; color: black"> name, </span><span style="font-size: 10pt; color: blue">int</span
+          ><span style="font-size: 10pt; color: black"> age, </span><span style="font-size: 10pt; color: blue">bool</span><span style="font-size: 10pt; color: black"> isEnrolled)</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; {</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">this</span><span style="font-size: 10pt; color: black">.Name = name;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">this</span><span style="font-size: 10pt; color: black">.Age = age;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">this</span><span style="font-size: 10pt; color: black">.IsEnrolled = isEnrolled;</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; }</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">string</span
+          ><span style="font-size: 10pt; color: black"> Name { </span><span style="font-size: 10pt; color: blue">get</span><span style="font-size: 10pt; color: black"> =&gt; name; </span><span style="font-size: 10pt; color: blue">set</span
+          ><span style="font-size: 10pt; color: black"> =&gt; name = value; }</span>
+        </div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">int</span
+          ><span style="font-size: 10pt; color: black"> Age { </span><span style="font-size: 10pt; color: blue">get</span><span style="font-size: 10pt; color: black"> =&gt; age; </span><span style="font-size: 10pt; color: blue">set</span
+          ><span style="font-size: 10pt; color: black"> =&gt; age = value; }</span>
+        </div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">bool</span
+          ><span style="font-size: 10pt; color: black"> IsEnrolled { </span><span style="font-size: 10pt; color: blue">get</span><span style="font-size: 10pt; color: black"> =&gt; isEnrolled; </span
+          ><span style="font-size: 10pt; color: blue">set</span><span style="font-size: 10pt; color: black"> =&gt; isEnrolled = value; }</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">string</span
+          ><span style="font-size: 10pt; color: black"> checkEnrolled()</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; {</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">return</span><span style="font-size: 10pt; color: black"> </span
+          ><span style="font-size: 10pt; color: blue">this</span><span style="font-size: 10pt; color: black">.isEnrolled ? </span><span style="font-size: 10pt; color: #a31515">"Yes"</span><span style="font-size: 10pt; color: black"> : </span
+          ><span style="font-size: 10pt; color: #a31515">"No"</span><span style="font-size: 10pt; color: black">;</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; }</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">public</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">override</span
+          ><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">string</span><span style="font-size: 10pt; color: black"> ToString()</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; {</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">return</span><span style="font-size: 10pt; color: black"> String.Format(</span
+          ><span style="font-size: 10pt; color: #a31515">"Name: {0}\nAge: {1}\nEnrolled: {2}"</span><span style="font-size: 10pt; color: black">, Name, Age, checkEnrolled());</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; }</span></div>
+        <div><span style="font-size: 10pt; color: black">}</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;</span></div>
+        <div><span style="font-size: 10pt; color: blue">class</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: #2b91af">Program</span></div>
+        <div><span style="font-size: 10pt; color: black">{</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; </span><span style="font-size: 10pt; color: blue">static</span><span style="font-size: 10pt; color: black"> </span><span style="font-size: 10pt; color: blue">void</span
+          ><span style="font-size: 10pt; color: black"> Main(</span><span style="font-size: 10pt; color: blue">string</span><span style="font-size: 10pt; color: black">[] args)</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160; {</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; Student student = </span><span style="font-size: 10pt; color: blue">new</span><span style="font-size: 10pt; color: black"> Student(</span
+          ><span style="font-size: 10pt; color: #a31515">"James"</span><span style="font-size: 10pt; color: black">, 15, </span><span style="font-size: 10pt; color: blue">true</span><span style="font-size: 10pt; color: black">);&#160; </span
+          ><span style="font-size: 10pt; color: green">// Create an object</span>
+        </div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; student.Name = </span><span style="font-size: 10pt; color: #a31515">"Jim"</span><span style="font-size: 10pt; color: black">;&#160; </span
+          ><span style="font-size: 10pt; color: green">// Set a property</span>
+        </div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; Console.WriteLine(student.Name);&#160; </span><span style="font-size: 10pt; color: green">// Access a property</span></div>
+        <div><span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; Console.WriteLine(student.checkEnrolled());&#160; </span><span style="font-size: 10pt; color: green">// Access a method</span></div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160;&#160;&#160;&#160;&#160; Console.WriteLine(student);&#160; </span
+          ><span style="font-size: 10pt; color: green">// Access objects toString()&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </span>
+        </div>
+        <div>
+          <span style="font-size: 10pt; color: black">&#160;&#160;&#160; }<br /></span><span style="font-size: 10pt; color: black">}</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-striped table-inverse table-responsive">
+  <thead class="thead-inverse">
+    <tr></tr>
+  </thead>
+</table>
